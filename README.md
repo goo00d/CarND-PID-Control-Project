@@ -56,7 +56,15 @@ cmake and make!
 More information is only accessible by people who are already enrolled in Term 2
 of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
 for instructions and the project rubric.
-
+## Rubic questions
+1.Describe the effect each of the P, I, D components had in your implementation.
+P components affect swing of the car
+I components affect initial defect of wheel
+D components affect how smooth the wheel back to center
+2.Describe how the final hyperparameters were chosen.
+I choose P=0.08,I=0,D=1.6
+I choose P = 0.08 because it make car not turn too much at each signal from simulator.
+when the car swing too much,I increase the D components.I found it difficult to find the wheel bias,so I choose I = 0.0 .
 ## Hints!
 
 * You don't have to follow this directory structure, but if you do, your work
